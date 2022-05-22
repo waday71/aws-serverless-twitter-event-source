@@ -1,5 +1,5 @@
 SHELL := /bin/sh
-PY_VERSION := 3.6
+PY_VERSION := 3.7
 
 export PYTHONUNBUFFERED := 1
 
@@ -45,4 +45,4 @@ package: compile
 	pipenv run pip install -t $(BUILD_DIR)/app/lib -r $(BUILD_DIR)/requirements.txt
 
 	# replace code local references with S3
-	pipenv run sam package --template-file $(BUILD_DIR)/template.yml --s3-bucket $(PACKAGE_BUCKET) --output-template-file $(BUILD_DIR)/packaged-app.yml
+	pipenv run sam package --template-file $(BUILD_DIR)/template.yml --s3-bucket twitter-source-artifacts --output-template-file $(BUILD_DIR)/packaged-app.yml
