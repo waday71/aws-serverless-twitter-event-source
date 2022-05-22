@@ -11,13 +11,3 @@ artifacts:
   files:
     - dist/packaged-app.yml
   discard-paths: yes
-env:
-  parameter-store:
-    CONSUMER_KEY: "/twitter-event-source/consumer_key"
-    CONSUMER_SECRET: "/twitter-event-source/consumer_secret"
-    ACCESS_TOKEN: "/twitter-event-source/access_token"
-    ACCESS_TOKEN_SECRET: "/twitter-event-source/access_token_secret"
-    SEARCHTEXT: "/twitter-event-soruce/SearchText"
-    TWEETPROCESSORFUNCTIONNAME: "/twitter-event-soruce/TweetProcessorFunctionName"
-    POLLINGFREQUENCYINMINUTES: "/twitter-event-soruce/PollingFrequencyInMinutes"
-    BATCHSIZE: "/twitter-event-soruce/BatchSize"
