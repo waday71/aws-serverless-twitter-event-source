@@ -8,7 +8,7 @@ BUILD_DIR := dist
 # Required environment variables (user must override)
 
 # S3 bucket used for packaging SAM templates
-PACKAGE_BUCKET ?= your-bucket-here
+PACKAGE_BUCKET ?= twitter-source-artifacts
 
 # user can optionally override the following by setting environment variables with the same names before running make
 
