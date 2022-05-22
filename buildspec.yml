@@ -5,6 +5,7 @@ phases:
     - make init
   build:
     commands:
+      echo $CODEBUILD_SRC_DIR
     - make
     - make package
 artifacts:
